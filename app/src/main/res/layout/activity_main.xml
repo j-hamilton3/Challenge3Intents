@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/homeTextView"
+        android:layout_width="384dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="12dp"
+        android:background="#FF9800"
+        android:text="Welcome to Palindrome and Pangram checker"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/homeTextInput"
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="24dp"
+        android:hint="Enter a word or phrase to be checked."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonPalindrome"
+        android:layout_width="134dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="515dp"
+        android:text="Check for Palindrome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonPangram"
+        android:layout_width="132dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginEnd="24dp"
+        android:text="Check for Pangram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
